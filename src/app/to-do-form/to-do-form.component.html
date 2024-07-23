@@ -1,0 +1,7 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" [formControl]="taskTitle" placeholder="Title">
+    <input type="text" [formControl]="taskDueDate" placeholder="Due Date">
+    <button type="submit">Add</button>
+  </form>
+</div>

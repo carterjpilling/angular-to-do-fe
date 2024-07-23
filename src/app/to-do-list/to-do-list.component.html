@@ -1,0 +1,6 @@
+<div>
+  <div *ngFor="let toDo of toDos">
+    <app-to-dos [toDo]="toDo" (deleteTask)="deleteTask($event)" (addTask)="addTask($event)"   (updateTaskCompletedStatus)="updateCompletedStatus($event)"></app-to-dos>
+  </div>
+  <app-to-do-form (newTask)="addTask($event)"></app-to-do-form>
+</div>

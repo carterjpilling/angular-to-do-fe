@@ -1,0 +1,5 @@
+<div>
+  {{toDo.title}}
+  <button (click)="deleteTask.emit(toDo._id)">Delete</button>
+  <input [disabled]="saveInProgress" type="checkbox" [checked]="toDo.completed" (change)="changeCompletedStatus()"/>
+</div>
